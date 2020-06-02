@@ -38,5 +38,5 @@ version: '3'
       volumes:
         - "./data:/app/data:rw"
       environment:
-		- PYTHONUNBUFFERED=1
+	- PYTHONUNBUFFERED=1
 ```
