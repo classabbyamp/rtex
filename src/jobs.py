@@ -46,7 +46,7 @@ async def render_latex(job_id, output_format, code, density, quality):
             try:
                 output = await run_command_async(
                     COMMAND_LATEX.format(pdir = pdir, fname = fname),
-                    timeout = 8
+                    timeout = 20
                 )
             finally:
                 log_file = fname.replace('.tex', '.log')

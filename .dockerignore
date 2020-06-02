@@ -1,0 +1,14 @@
+.github/
+.git/
+.gitignore
+
+/*env/
+Pipfile
+
+.flake8
+
+docker-compose.y*ml
+
+/tests
+
+*.md

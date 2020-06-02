@@ -23,3 +23,20 @@ openin_any = p
 ```
 
 More details [here](https://tex.stackexchange.com/questions/10418/how-can-i-safely-compile-other-peoples-latex-documents).
+
+
+## Docker
+
+Sample `docker-compose.yml`:
+
+```yaml
+version: '3'
+  services:
+    rtex:
+      image: "docker.pkg.github.com/classabbyamp/rtex:latest"
+      restart: on-failure
+      volumes:
+        - "./data:/app/data:rw"
+      environment:
+		- PYTHONUNBUFFERED=1
+```
