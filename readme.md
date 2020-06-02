@@ -33,7 +33,7 @@ Sample `docker-compose.yml`:
 version: '3'
   services:
     rtex:
-      image: "docker.pkg.github.com/classabbyamp/rtex:latest"
+      image: "docker.pkg.github.com/classabbyamp/rtex/rtex:latest"
       restart: on-failure
       volumes:
         - "./data:/app/data:rw"
